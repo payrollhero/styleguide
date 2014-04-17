@@ -250,8 +250,8 @@ HAML
     %li My Clockin
 ```
 
-CSS
-```css
+SCSS
+```scss
 .my-clock-container {
   width: 500px;
   
