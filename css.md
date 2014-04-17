@@ -109,17 +109,17 @@ Use meaningful classnames for control flow in HAML and meaningful look & feel na
 
 HAML
 ```haml
-/good
-#page-notice
-  .when-error.error-notice
-    /error data goes here
-  .when-warning.warning-notice
-  
-/bad
+/* Bad */
 #page-notice
   #when-error
     /data
   #when-warning
+
+/* Good */
+#page-notice
+  .when-error.error-notice
+    /error data goes here
+  .when-warning.warning-notice
 ```
 
 CSS
