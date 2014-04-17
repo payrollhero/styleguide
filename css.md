@@ -11,9 +11,6 @@
 1. [Comments](#comments)
 1. [Resources](#resources)
 
-> ### "Part of being a good steward to a successful project is realising that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec."
->*Idan Gazit*
-
 ## <a name='whitespace'>Whitespace</a>
 
 Use soft tabs set to 2 spaces.
