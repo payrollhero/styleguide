@@ -152,6 +152,8 @@ Declare structurally important properties prior to all others.
 
 Use meaningful classnames for control flow in HAML and meaningful look & feel names in css.
 
+
+HAML
 ```haml
 /good
 #page-notice
@@ -166,6 +168,7 @@ Use meaningful classnames for control flow in HAML and meaningful look & feel na
   #when-warning
 ```
 
+CSS
 ```css
 /* Good */
 #page-notice {
@@ -283,6 +286,7 @@ body {
 Our general principle for styling entire areas in custom ways is to use our existing styles to style the page.  Then use new classes which contain the entire set of elements upon which you apply specific styling.
 
 Example.
+HAML
 ```haml
 .my-clock-container
   %button.success-button
@@ -292,6 +296,7 @@ Example.
     %li My Clockin
 ```
 
+CSS
 ```css
 .my-clock-container {
   width: 500px;
