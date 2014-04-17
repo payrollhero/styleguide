@@ -97,52 +97,6 @@ The chosen code format ensures that code is: easy to read; easy to clearly comme
 
 **[[⬆]](#TOC)**
 
-## <a name='declaration-order'>Declaration Order</a>
-
-Declare structurally important properties prior to all others.
-
-```css
-.selector {
-  /* Positioning */
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-
-  /* Display and Box Model */
-  display: inline-block;
-  float: left;
-  clear: both;
-  overflow: hidden;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-
-  /* Typography */
-  font-family: sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: right;
-  vertical-align: baseline;
-  white-space: nowrap;
-  color: #333;
-
-  /* Others */
-  outline: 0;
-  list-style: circle;
-  background: #fff;
-  opacity: 0.75;
-  cursor: default;
-  content: "";
-}
-```
-
-**[[⬆]](#TOC)**
-
 ## <a name='naming-conventions'>Naming Conventions & Class vs ID</a>
 
 + **Only** Use IDs for things that are unique
