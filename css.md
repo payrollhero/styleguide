@@ -143,33 +143,58 @@ Declare structurally important properties prior to all others.
 
 **[[⬆]](#TOC)**
 
-## <a name='naming-conventions'>Naming Conventions</a>
+## <a name='naming-conventions'>Naming Conventions & Class vs ID</a>
 
-Elements that **occur exactly** once inside a page should use IDs, otherwise, use classes. When in doubt, use a class name.
++ **Only** Use IDs for things that are unique
++ **Only** Use IDs for javascript control, not styling
++ **Good** Use separate classes for control versus look & feel.
++ **Bad** Combining class name look & feel with control flow.
 
-+ **Good** candidates for ids: header, footer, modal popups
-+ **Bad** cadidates for ids: navigation, item listings
+Use meaningful classnames for control flow in HAML and meaningful look & feel names in css.
 
-Use meaningful or generic ID and class names.
+```haml
+/good
+#page-notice
+  .when-error.error-notice
+    /error data goes here
+  .when-warning.warning-notice
+  
+/bad
+#page-notice
+  #when-error
+    /data
+  #when-warning
+```
 
 ```css
-/* Bad */
-#yee-1901 {
-  float: left;
-}
-
-.button-green {
-  background: #060;
-}
-
 /* Good */
-#gallery {
+#page-notice {
   float: left;
 }
 
-.primary {
-  background: #060;
+.error-notice {
+  color: red;
 }
+
+.warning-notice {
+  color: yellow;
+}
+
+/* Bad */
+#page-notice {
+  float: left;
+  
+  #when_error {
+    color: red;
+  }
+  
+  #when-warning {
+    color: yellow;
+  }
+  
+}
+
+
 ```
 
 Use ID and class names that are as short as possible but as long as necessary.
@@ -185,7 +210,7 @@ Use ID and class names that are as short as possible but as long as necessary.
 }
 
 /* Good */
-#nav {
+.nav {
   display: block;
 }
 
@@ -253,6 +278,38 @@ body {
 ```
 
 **[[⬆]](#TOC)**
+
+## <a name='styling_areas'>Styling Entire Areas</a>
+Our general principle for styling entire areas in custom ways is to use our existing styles to style the page.  Then use new classes which contain the entire set of elements upon which you apply specific styling.
+
+Example.
+```haml
+.my-clock-container
+  %button.success-button
+    Clock In!
+    
+  %ul.float-right.clock-in-photos
+    %li My Clockin
+```
+
+```css
+.my-clock-container {
+  width: 500px;
+  
+  .success-button {
+    font-size: 150%;
+  }
+  
+  ul.clock-in-photos {
+    list-style: none;
+  }
+}
+
+```
+
++ We **aim** to have as many generic style elements as possible which define our overall style.
++ We **always** use a containing element under which we define the styling for an area.
++ We **aim** to break more generic style elements into our style guide and into the general.css file
 
 ## <a name='comments'>Comments</a>
 
