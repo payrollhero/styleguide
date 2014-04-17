@@ -73,6 +73,8 @@ The chosen code format ensures that code is: easy to read; easy to clearly comme
 + Include a semi-colon at the end of the last declaration in a declaration block
 + Place the closing brace of a ruleset in the same column as the first character of the ruleset
 + Separate each ruleset by a blank line
++ Use no more than three level nesting of selectors
++ We *always* use mixins for vendor prefixes
 
 ```css
 /* Bad */
