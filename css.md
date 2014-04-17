@@ -11,6 +11,10 @@
 1. [Comments](#comments)
 1. [Resources](#resources)
 
+## <a name='whitespace'>Categorization</a>
+
++ Use smacss rules for categorization: http://smacss.com/book/categorizing
+
 ## <a name='whitespace'>Whitespace</a>
 
 Use soft tabs set to 2 spaces.
