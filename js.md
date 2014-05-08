@@ -45,8 +45,18 @@ Do NOT use the practice of using anonymous functions with closure variables to c
 
 ### Utility functions
 
-Place useful converion and utility functions by extending Underscore (_.extend ... ).
+Place useful conversion and utility functions by extending Underscore (_.mixin ... ).
 
+```coffee
+  #good
+  _.mixin
+    convertFooToBar: (obj) ->
+      obj.bar = obj.foo
+      
+  #bad
+  window.fooTobar= (obj) ->
+    obj.bar = obj.foo
+```
 
 ## Table of Contents
 
