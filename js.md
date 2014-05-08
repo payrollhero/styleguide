@@ -770,7 +770,7 @@ Place useful conversion and utility functions by extending Underscore (_.mixin .
     });
     ```
 
-  - Set off operators with spaces.
+  - Put spaces around operators.
 
     ```javascript
     // bad
