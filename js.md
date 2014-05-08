@@ -289,11 +289,6 @@ Place useful conversion and utility functions by extending Underscore (_.mixin .
       return true;
     };
 
-    // named function expression
-    var named = function named() {
-      return true;
-    };
-
     // immediately-invoked function expression (IIFE)
     (function() {
       console.log('Welcome to the Internet. Please follow me.');
