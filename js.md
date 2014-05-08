@@ -19,7 +19,8 @@ Namespace your classes appropriately into the application, this will make your c
 Do NOT use the practice of using anonymous functions with closure variables to create private member functions for a class.  This is NOT recommended and is very difficult to read.  Instead use _ to start the name of your member function to indicate that it should be private.
 
 ```javascript
-  # bad
+  // bad
+
   function MyClass() {
     var myfunc = function () {
       //do something private
@@ -29,7 +30,8 @@ Do NOT use the practice of using anonymous functions with closure variables to c
     }
   }
   
-  # good
+  // good
+
   function MyClass() {
     //constructor stuff
   }
