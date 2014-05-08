@@ -18,6 +18,29 @@ Namespace your classes appropriately into the application, this will make your c
 
 Do NOT use the practice of using anonymous functions with closure variables to create private member functions for a class.  This is NOT recommended and is very difficult to read.  Instead use _ to start the name of your member function to indicate that it should be private.
 
+```javascript
+  # bad
+  function MyClass() {
+    var myfunc = function () {
+      //do something private
+    }
+    this.public_func = function () {
+      myfunc.apply(this,[]);
+    }
+  }
+  
+  # good
+  function MyClass() {
+    //constructor stuff
+  }
+  MyClass.prototype = {
+    _myPrivateMethod: function () {true},
+    myPublicMethod: function(){false}
+  }
+
+```
+
+
 ### Utility functions
 
 Place useful converion and utility functions by extending Underscore (_.extend ... ).
