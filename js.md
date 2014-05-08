@@ -284,8 +284,15 @@ Place useful conversion and utility functions by extending Underscore (_.mixin .
   - Function expressions:
 
     ```javascript
-    // anonymous function expression
-    var anonymous = function() {
+    // bad
+    var noname = function() {
+      return true;
+    };
+
+    
+    // good
+    // named function expression shows on stacktrace
+    var named = function named() {
       return true;
     };
 
