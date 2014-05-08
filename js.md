@@ -575,22 +575,22 @@ Place useful conversion and utility functions by extending Underscore (_.mixin .
   - Use shortcuts.
 
     ```javascript
-    // bad
+    // good
     if (name !== '') {
       // ...stuff...
     }
 
-    // good
+    // bad
     if (name) {
       // ...stuff...
     }
 
-    // bad
+    // good
     if (collection.length > 0) {
       // ...stuff...
     }
 
-    // good
+    // bad
     if (collection.length) {
       // ...stuff...
     }
