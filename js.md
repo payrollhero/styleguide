@@ -603,7 +603,7 @@ Place useful conversion and utility functions by extending Underscore (_.mixin .
 
 ## Blocks
 
-  - Use braces with all multi-line blocks.
+  - Use braces with multi-line blocks, single line functions are good.
 
     ```javascript
     // bad
@@ -618,10 +618,10 @@ Place useful conversion and utility functions by extending Underscore (_.mixin .
       return false;
     }
 
-    // bad
+    // good
     function() { return false; }
 
-    // good
+    // bad
     function() {
       return false;
     }
