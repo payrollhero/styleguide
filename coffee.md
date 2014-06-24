@@ -290,13 +290,6 @@ The function grouping style is not recommended. However, **if the function group
 <a name="strings"/>
 ## Strings
 
-Use string interpolation instead of string concatenation:
-
-```coffeescript
-"this is an #{adjective} string" # Yes
-"this is an " + adjective + " string" # No
-```
-
 Prefer single quoted strings (`''`) instead of double quoted (`""`) strings, unless features like string interpolation are being used for the given string.
 
 <a name="conditionals"/>
