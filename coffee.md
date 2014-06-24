@@ -16,7 +16,7 @@
         * [Block Comments](#block_comments)
         * [Inline Comments](#inline_comments)
     * [Naming Conventions](#naming_conventions)
-    * [Functions](#functions) --- next meeting resumes here
+    * [Functions](#functions)
     * [Strings](#strings)
     * [Conditionals](#conditionals)
     * [Looping and Comprehensions](#looping_and_comprehensions)
