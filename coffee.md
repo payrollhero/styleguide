@@ -265,17 +265,17 @@ new Tag(new Value(a, b), new Arg(c))
 You will sometimes see parentheses used to group functions (instead of being used to group function parameters). Examples of using this style (hereafter referred to as the "function grouping style"):
 
 ```coffeescript
-$('#selektor').addClass 'klass'
+($ '#selektor').addClass 'klass' # no
 
-(foo 4).bar 8
+(foo 4).bar 8 # no
 ```
 
 This is in contrast to:
 
 ```coffeescript
-$('#selektor').addClass 'klass'
+$('#selektor').addClass 'klass' # yes
 
-foo(4).bar 8
+foo(4).bar 8 # yes
 ```
 
 In cases where method calls are being chained, some adopters of this style prefer to use function grouping for the initial call only:
