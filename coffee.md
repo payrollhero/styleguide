@@ -21,7 +21,6 @@
     * [Conditionals](#conditionals)
     * [Looping and Comprehensions](#looping_and_comprehensions)
     * [Extending Native Objects](#extending_native_objects)
-    * [Exceptions](#exceptions)
     * [Annotations](#annotations)
     * [Miscellaneous](#miscellaneous)
 
@@ -361,11 +360,6 @@ alert("#{key} = #{value}") for key, value of object
 Do not modify native objects.
 
 For example, do not modify `Array.prototype` to introduce `Array#forEach`.
-
-<a name="exceptions"/>
-## Exceptions
-
-Do not suppress exceptions.
 
 <a name="annotations"/>
 ## Annotations
