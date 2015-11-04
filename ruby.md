@@ -2217,6 +2217,17 @@ Much of this has been taken from https://github.com/styleguide/ruby and https://
   #=> "def test\n  some_method\n  other_method\nend\n"
   ```
 
+* When passing Ruby variables to Javascript always use `#to_json` rather than manually trying to convert the variable. This method converts any object to a Javascript Notation (JSON) which Javascript natively understands.
+
+  ```slim
+    script
+      // good
+      var javascriptVariable = #{ruby_varialble.to_json};
+      
+      // bad
+      var javascriptVariable = "#{ruby_varialble}";
+  ```
+
 ## Regular Expressions
 
 > Some people, when confronted with a problem, think
