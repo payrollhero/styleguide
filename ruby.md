@@ -2222,10 +2222,10 @@ Much of this has been taken from https://github.com/styleguide/ruby and https://
   ```slim
     script
       // good
-      var javascriptVariable = #{ruby_varialble.to_json};
+      var javascriptVariable = #{ruby_variable.to_json};
       
       // bad
-      var javascriptVariable = "#{ruby_varialble}";
+      var javascriptVariable = "#{ruby_variable}";
   ```
 
 ## Regular Expressions
