@@ -2,15 +2,11 @@ inherit_from:
  - .rubocop.hound.yml
 
 AllCops:
+  TargetRubyVersion: 2.1
   Exclude:
     - '*.gemspec'
     - 'Gemfile'
 
-# Older version
-Style/EmptyLinesAroundBody:
-  Enabled: false
-
-# Newer version (3 for the 1 above)
 Style/EmptyLinesAroundClassBody:
   Enabled: false
 
@@ -20,7 +16,9 @@ Style/EmptyLinesAroundModuleBody:
 Style/EmptyLinesAroundMethodBody:
   Enabled: false
 
-# Other
+Style/ClassCheck:
+  Enabled: false
+  # we don't care about kind_of? vs is_a?
 
 Style/StringLiterals:
   Enabled: false
@@ -32,10 +30,6 @@ Style/RedundantException:
   Enabled: false
 
 Style/SignalException:
-  Enabled: false
-
-# PH Coding Rules
-Style/Blocks:
   Enabled: false
 
 Style/BlockDelimiters:
